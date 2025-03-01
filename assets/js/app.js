@@ -187,9 +187,58 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   });
 
   /*--------------------------------------------------------------
+   FRADO MAGNIFIC PUPOP JS INIT
+   --------------------------------------------------------------*/
+  var popup_youtube = $('.video-init');
+  if (popup_youtube.is_exist()) {
+    popup_youtube.magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade'
+    });
+  }
+
+  /*--------------------------------------------------------------
   FRADO TESTIMONIAL SLIDER JS INIT
   --------------------------------------------------------------*/
   var t_slider = $('.frado-t-slider-init');
+  if (t_slider.is_exist()) {
+    t_slider.slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 6000,
+      arrows: false,
+      pauseOnHover: false,
+      cssEase: 'linear',
+      centerPadding: '180px',
+      lazyLoad: 'progressive',
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '100px'
+        }
+      }, {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '0px'
+        }
+      }]
+    });
+  }
+
+  /*--------------------------------------------------------------
+  FRADO ABOUT SLIDER JS INIT
+  --------------------------------------------------------------*/
+  var t_slider = $('.frado-about-slider-init');
   if (t_slider.is_exist()) {
     t_slider.slick({
       slidesToShow: 4,
