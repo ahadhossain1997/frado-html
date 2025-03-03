@@ -20,7 +20,6 @@
 --heading-bg: #181D14;
 --accent-color: #04DA00;
 --accent-bg: #04DA00;
---body-color: #A3BDFF;
 --white-color: #ffffff;
 --white-bg: #ffffff;
 --light-color: #F3EEE3;
@@ -2567,6 +2566,7 @@ header.hide-header {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 .frado-hero-shape2 {
   position: absolute;
@@ -2627,6 +2627,147 @@ header.hide-header {
   left: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.frado-p-line {
+  position: absolute;
+  top: 70px;
+  left: 250px;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .frado-p-line {
+    top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-p-line {
+    left: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-p-line {
+    display: none;
+  }
+}
+.frado-p-line2 {
+  top: 70px;
+  left: 380px;
+  position: absolute;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .frado-p-line2 {
+    top: 50px;
+    left: 250px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-p-line2 {
+    left: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-p-line2 {
+    display: none;
+  }
+}
+
+.frado-faq-line {
+  position: absolute;
+  top: 170px;
+  left: 15px;
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .frado-faq-line {
+    top: 148px;
+    left: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  .frado-faq-line {
+    top: 122px;
+    left: 122px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-faq-line {
+    top: 130px;
+    left: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-faq-line {
+    display: none;
+  }
+}
+.frado-faq-shape {
+  position: absolute;
+  bottom: 300px;
+  left: 0;
+  z-index: -1;
+}
+
+.frado-content-line {
+  position: absolute;
+  top: 165px;
+  right: 25px;
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .frado-content-line {
+    position: absolute;
+    top: 140px;
+    right: 65px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1199px) {
+  .frado-content-line {
+    top: 130px;
+    right: 210px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-content-line {
+    right: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-content-line {
+    display: none;
+  }
+}
+
+.frado-contact-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.frado-pricing-line {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .frado-pricing-line {
+    top: 50px;
+    left: 75px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-pricing-line {
+    left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-pricing-line {
+    display: none;
+  }
 }
 
 .frado-career-wrap {
@@ -2797,20 +2938,107 @@ header.hide-header {
   padding: 24px 0;
 }
 
-.frado-contact-box p {
-  margin-top: 24px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+.frado-contact-main-box {
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
 }
-.frado-contact-us-map {
+@media (max-width: 991px) {
+  .frado-contact-main-box {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-contact-main-box {
+    padding: 30px 24px;
+    margin-top: 30px;
+  }
+}
+.frado-contact-info-wrap {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.frado-contact-info-wrap:last-child {
+  padding-bottom: 0;
+}
+@media (max-width: 991px) {
+  .frado-contact-info-wrap {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-contact-info-wrap {
+    padding-bottom: 40px;
+  }
+}
+.frado-contact-info-wrap h4 {
+  padding-bottom: 15px;
+}
+.frado-contact-info-wrap a {
+  font-weight: 500;
+  display: block;
+  color: var(--heading-color);
+}
+.frado-contact-info-wrap span {
+  font-weight: 500;
+}
+.frado-contact-info-icon {
+  flex-shrink: 0;
+}
+.frado-contact-box {
+  margin-left: 80px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--heading-bg);
+}
+@media (max-width: 1199px) {
+  .frado-contact-box {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-contact-box {
+    padding: 30px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-contact-box {
+    padding: 30px 24px;
+    margin-top: 30px;
+  }
+}
+.frado-contact-box h3 {
+  color: var(--light-color);
+  padding-bottom: 15px;
+}
+.frado-contact-box p {
+  color: var(--light-color);
+  margin-bottom: 40px;
+}
+.frado-contact-map {
   width: 100%;
   height: 750px;
 }
 @media (max-width: 991px) {
-  .frado-contact-us-map {
+  .frado-contact-map {
     height: 400px;
+  }
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .pb-100 {
+    padding-bottom: 60px;
   }
 }
 
@@ -3116,6 +3344,9 @@ header.hide-header {
 .frado-p-wrap2:hover .frado-p-btn2 {
   opacity: 1;
 }
+.frado-p-wrap2.wrap3 {
+  margin: 0 12px;
+}
 .frado-p-thumb2 {
   position: relative;
   overflow: hidden;
@@ -3187,27 +3418,75 @@ header.hide-header {
   gap: 12px;
   flex-wrap: wrap;
 }
-.frado-p-title {
-  max-width: 1000px;
-  text-align: center;
+.frado-p-d-wrap {
+  max-width: 1080px;
   margin: 0 auto;
-  padding-bottom: 100px;
+}
+.frado-p-d-thumb {
+  padding-top: 80px;
+}
+@media (max-width: 757px) {
+  .frado-p-d-thumb {
+    padding-top: 60px;
+  }
+}
+.frado-p-d-content h3 {
+  padding-bottom: 15px;
+}
+.frado-p-d-data h4 {
+  padding-bottom: 12px;
+}
+.frado-p-d-sidebar {
+  position: sticky;
+  top: 110px;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: var(--heading-bg);
+  margin-left: 30px;
 }
 @media (max-width: 991px) {
-  .frado-p-title {
-    padding-bottom: 80px;
+  .frado-p-d-sidebar {
+    margin-left: 0;
+    margin-top: 40px;
   }
 }
 @media (max-width: 767px) {
-  .frado-p-title {
-    padding-bottom: 60px;
+  .frado-p-d-sidebar {
+    margin-top: 30px;
   }
 }
-.frado-p-title p {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: 32px;
+.frado-p-d-sidebar ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.frado-p-d-sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+.frado-p-d-sidebar ul li h4, .frado-p-d-sidebar ul li p {
+  color: var(--light-color);
+}
+.frado-p-d-sidebar ul li::before {
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  left: 0;
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.frado-portfolio-menu ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .frado-listicon-wrap ul li {
@@ -3239,20 +3518,11 @@ header.hide-header {
   border-radius: 20px;
   padding: 30px;
   background-color: var(--light-color);
-}
-@media (max-width: 1199px) {
-  .frado-faq-item.item2 {
-    padding: 15px 30px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-faq-item.item2 {
-    padding: 0 30px;
-  }
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 767px) {
   .frado-faq-item.item2 {
-    padding: 0;
+    padding: 30px 24px;
   }
 }
 .frado-faq-header {
@@ -3268,7 +3538,7 @@ header.hide-header {
 }
 .frado-faq-body {
   display: none;
-  padding-right: 45px;
+  padding-right: 70px;
   padding-top: 10px;
 }
 @media (max-width: 991px) {
@@ -3288,6 +3558,19 @@ header.hide-header {
   .frado-faq-thumb img {
     width: 100%;
   }
+}
+.frado-faq-title {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+}
+.frado-faq-title p {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 890px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 img.up {
@@ -3317,6 +3600,221 @@ img.down {
   .frado-active-icon img {
     width: 50px;
   }
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .tabs {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs {
+    margin-bottom: 40px;
+  }
+}
+.tabs li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 19px 43px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+  border: 2px solid var(--heading-color);
+}
+.tabs li.current {
+  border: 2px solid var(--heading-color);
+  color: var(--light-color);
+  background-color: var(--heading-color);
+}
+
+.frado-tab-content {
+  display: none;
+}
+
+.frado-tab-content.current {
+  display: inherit;
+}
+
+.frado-pricing-table {
+  padding-top: 80px;
+}
+@media (max-width: 1349px) {
+  .frado-pricing-table {
+    overflow-x: auto;
+  }
+}
+@media (max-width: 767px) {
+  .frado-pricing-table {
+    padding-top: 60px;
+  }
+}
+.frado-pricing-wrap {
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.7s;
+}
+.frado-pricing-wrap:hover {
+  background-color: var(--heading-bg);
+}
+.frado-pricing-wrap:hover .sub-title {
+  color: var(--light-color);
+}
+.frado-pricing-wrap:hover .frado-pricing-price {
+  color: var(--light-color);
+}
+.frado-pricing-wrap:hover .frado-pricing-text {
+  color: var(--light-color);
+}
+.frado-pricing-wrap:hover .pricing-btn {
+  background-color: var(--accent-color);
+}
+.frado-pricing-header {
+  padding-bottom: 10px;
+}
+.frado-pricing-header span.sub-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  transition: all 0.4s;
+}
+.frado-pricing-text {
+  transition: all 0.4s;
+}
+.frado-pricing-price {
+  gap: 5px;
+  display: flex;
+  transition: all 0.4s;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.frado-price-value {
+  font-size: 70px;
+  line-height: 1em;
+}
+
+.toggle-btn {
+  margin: 0 15px;
+}
+
+tr {
+  text-align: center;
+  display: grid;
+  gap: 24px;
+  margin-bottom: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table-header th {
+  text-align: left;
+}
+.table-header th span {
+  font-size: 35px;
+  line-height: 1.2em;
+}
+@media (max-width: 575px) {
+  .table-header th span {
+    font-size: 30px;
+  }
+}
+
+.title-date {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.table-sub-title {
+  margin: 0;
+  border-top: 1px solid rgba(24, 29, 20, 0.1);
+}
+.table-sub-title th {
+  padding: 24px 0;
+}
+.table-sub-title th ul li {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 400;
+  display: inline-block;
+}
+.table-sub-title th ul li img {
+  margin-right: 10px;
+}
+.table-sub-title th p {
+  text-align: left;
+  font-weight: 700;
+}
+
+.pricing-btn {
+  display: flex;
+  align-items: center;
+}
+.pricing-btn label {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+[data-pricing-dynamic][data-value-active=yearly] .dynamic-value:before {
+  display: inline-block;
+  content: attr(data-yearly);
+}
+
+[data-pricing-dynamic][data-value-active=yearly] [data-pricing-trigger] span {
+  left: calc(100% - 33px);
+}
+
+[data-pricing-dynamic][data-value-active=monthly] .dynamic-value:before {
+  display: inline-block;
+  content: attr(data-monthly);
+}
+
+.dynamic-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+
+.static-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+
+.pricing-btn .btn-toggle {
+  position: relative;
+  width: 70px !important;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  margin: 0;
+  padding: 0 !important;
+  cursor: pointer;
+  background-size: 25px;
+  border: none !important;
+  background-position: center right 5px;
+  border: none !important;
+  background-position: center right 5px;
+  background-color: var(--accent-color);
+  background-image: url(../images/pricing/switcher-btn.svg) !important;
+}
+
+.form-check-input:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.pricing-btn .btn-toggle:checked {
+  background-position: center left 5px;
+  background-image: url(../images/pricing/switcher-btn.svg) !important;
 }
 
 .frado-team-wraper {
@@ -3825,6 +4323,11 @@ img.down {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 991px) {
+  .play-btn {
+    top: 58%;
+  }
+}
 
 .frado-popup-video {
   animation: animName 8s linear infinite;
@@ -3850,61 +4353,39 @@ input[type=search],
 input, textarea {
   margin: 0;
   width: 100%;
-  height: 60px;
-  color: var(--heading-color);
+  color: rgba(243, 238, 227, 0.5) !important;
   border-radius: 0;
   background-color: transparent;
-  padding: 15px 0;
+  padding: 17px 24px;
   border: none;
   transition: all 0.4s;
 }
 
 textarea {
-  height: 145px;
+  height: 250px;
   resize: none;
-}
-textarea::placeholder {
-  color: rgba(24, 27, 14, 0.6) !important;
 }
 @media (max-width: 767px) {
   textarea {
-    height: 100px;
+    height: 150px;
   }
 }
 
-.frado-main-field p {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-}
-.frado-main-field input {
-  padding: 18px 24px;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: var(--light-color2);
-}
-.frado-main-field input::placeholder {
-  color: rgba(24, 27, 14, 0.6);
-}
-.frado-main-field-textarea {
-  background: var(--light-color2);
-  padding: 24px;
-  border-radius: 10px;
+.frado-main-field {
   margin-bottom: 24px;
 }
-.frado-main-field-textarea p {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
+.frado-main-field input {
+  border-radius: 50px;
+  border: 1px solid rgba(243, 238, 227, 0.5);
+  font-size: 20px;
   line-height: 30px;
 }
-.frado-main-field-textarea.textarea2 {
-  background-color: var(--light-color);
-}
-.frado-main-field.field2 input {
-  background-color: var(--light-color);
+.frado-main-field-textarea {
+  border-radius: 20px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 30px;
+  border: 1px solid rgba(243, 238, 227, 0.5);
 }
 
 .frado-cta-section {
@@ -3984,6 +4465,10 @@ textarea::placeholder {
   }
 }
 
+.frado-section-padding5 {
+  padding: 30px 0 0;
+}
+
 .pb-96 {
   padding-bottom: 96px;
 }
@@ -4033,6 +4518,26 @@ textarea::placeholder {
 }
 .frado-section-title.center.max-width-750 {
   max-width: 750px;
+}
+
+.frado-section-title2 {
+  position: relative;
+}
+.frado-section-title2.center {
+  max-width: 1080px;
+  text-align: center;
+  margin: 0 auto;
+}
+.frado-section-title2.center.max-900 {
+  max-width: 900px;
+}
+
+.max-950 {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .frado-default-content h2 {
@@ -4212,7 +4717,7 @@ textarea::placeholder {
   position: absolute;
   top: 1%;
   left: 0%;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background-color: var(--accent-bg);
   border-color: transparent;
@@ -4277,6 +4782,11 @@ textarea::placeholder {
   color: var(--heading-color);
   background-color: var(--light-color);
   border: 2px solid var(--heading-color);
+}
+.frado-default-btn.outline-btn.active,
+#frado-submit-btn.outline-btn.active {
+  color: var(--light-color);
+  background-color: var(--heading-bg);
 }
 .frado-default-btn.outline-btn path,
 #frado-submit-btn.outline-btn path {
