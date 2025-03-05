@@ -2407,6 +2407,11 @@ header.hide-header {
     padding-bottom: 60px;
   }
 }
+@media (max-width: 767px) {
+  .frado-footer-top-btn {
+    padding-bottom: 40px;
+  }
+}
 .frado-footer-line {
   padding-bottom: 100px;
 }
@@ -2823,6 +2828,46 @@ header.hide-header {
 }
 @media (max-width: 991px) {
   .frado-blog-line2 {
+    display: none;
+  }
+}
+
+.frado-service-d-line {
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .frado-service-d-line {
+    left: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-service-d-line {
+    display: none;
+  }
+}
+
+.frado-team-line {
+  position: absolute;
+  top: 70px;
+  left: 276px;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .frado-team-line {
+    top: 50px;
+    left: 190px;
+  }
+}
+@media (max-width: 991px) {
+  .frado-team-line {
+    left: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-team-line {
     display: none;
   }
 }
@@ -4112,7 +4157,7 @@ tr {
 .frado-blog-d-content ul li {
   position: relative;
   padding-left: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .frado-blog-d-content ul li:last-child {
   margin-bottom: 0;
@@ -4400,6 +4445,75 @@ blockquote::before {
   .frado-service-table-date {
     justify-content: left;
   }
+}
+.frado-service-d-wrap {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.frado-service-d-thumb {
+  padding-top: 80px;
+}
+@media (max-width: 991px) {
+  .frado-service-d-thumb {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .frado-service-d-thumb {
+    padding-top: 40px;
+  }
+}
+.frado-service-d-thumb img {
+  border-radius: 20px;
+}
+.frado-service-d-content h3, .frado-service-d-content h4 {
+  padding-bottom: 15px;
+}
+.frado-service-d-content ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.frado-service-d-content ul li:last-child {
+  margin-bottom: 0;
+}
+.frado-service-d-content ul li::before {
+  top: 15px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  background-color: var(--heading-bg);
+}
+.frado-service-d-content .text {
+  margin-bottom: 10px;
+}
+.frado-service-d-card {
+  padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .frado-service-d-card {
+    padding-top: 30px;
+  }
+}
+.frado-service-d-thumb2 {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  border-radius: 20px;
+  margin-top: 24px;
+}
+.frado-service-d-thumb2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+  border-radius: 20px;
+}
+.frado-service-d-thumb2 img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 991px) {
