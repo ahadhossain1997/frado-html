@@ -76,16 +76,36 @@
       </div>
       <div class="frado-mobile-menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Homepage</a>
+            <ul class="sub-menu">
+              <li><a href="index.html">Home 01</a></li>
+              <li><a href="index-02.html">Home 02</a></li>
+            </ul>
+          </li>
           <li><a href="about-us.html">About Us</a></li>
           <li class="menu-item-has-children">
             <a href="#">Pages</a>
             <ul class="sub-menu">
-              <li><a href="service.html">Service</a></li>
+              <li class="menu-item-has-children">
+                <a href="#">Service</a>
+                <ul class="sub-menu">
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="single-service.html">Service Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Career</a>
+                <ul class="sub-menu">
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="single-career.html">Career Details</a></li>
+                </ul>
+              </li>
               <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="faq.html">Faq</a></li>
               <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="404.html">Errors 404</a></li>
             </ul>
           </li>
           <li><a href="blog.html">Blog</a></li>
@@ -135,10 +155,18 @@
                         <li><a href="single-service.html">Service Details</a></li>
                       </ul>
                     </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Career</a>
+                      <ul class="sub-menu">
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="single-career.html">Career Details</a></li>
+                      </ul>
+                    </li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="faq.html">Faq</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="404.html">Errors 404</a></li>
                   </ul>
                 </li>
                 <li><a href="blog.html">Blog</a></li>
@@ -226,7 +254,7 @@
   </section>
   <!-- end content -->
 
-  <section class="frado-section-padding4 section" style="background-image: url(assets/images/faq/bg1.png);">
+  <div class="frado-section-padding4 section" style="background-image: url(assets/images/faq/bg1.png);">
     <div class="container">
       <div class="frado-section-title center">
         <h2>We provide useful information in FAQs</h2>
@@ -299,13 +327,8 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- end faq -->
-
-
-
-
-
 
   <!-- Footer  -->
   <footer class="frado-footer-section section" style="background-image: url(assets/images/footer/footer-bg.png);">
