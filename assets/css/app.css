@@ -362,12 +362,6 @@ h4,
   font-size: 28px;
   line-height: 1.07em;
 }
-@media (max-width: 575px) {
-  h4,
-  .h4 {
-    font-size: 24px;
-  }
-}
 
 p:last-child {
   margin-bottom: 0;
@@ -3635,8 +3629,11 @@ header.hide-header {
 }
 
 .frado-p-box {
-  padding-top: 50px;
+  padding: 50px 0 0 50px;
   margin-bottom: 24px;
+  border-radius: 20px 20px 0 20px;
+  background-color: var(--light-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1199px) {
   .frado-p-box {
@@ -3646,6 +3643,7 @@ header.hide-header {
 @media (max-width: 991px) {
   .frado-p-box {
     padding: 30px 30px 0;
+    border-radius: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -3653,21 +3651,63 @@ header.hide-header {
     padding: 30px 20px 0;
   }
 }
+.frado-p-box.box2 {
+  padding-left: 0;
+  border-radius: 20px 20px 20px 0;
+}
+@media (max-width: 991px) {
+  .frado-p-box.box2 {
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
 .frado-p-wrap {
   transition: all 0.4s;
+  padding-right: 100px;
   position: relative;
 }
-.frado-p-content {
-  margin-top: 50px;
+@media (max-width: 1399px) {
+  .frado-p-wrap {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
+  .frado-p-wrap {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .frado-p-wrap {
+    padding-right: 0;
+  }
+}
+.frado-p-wrap.wrap2 {
+  padding-right: 70px;
+  padding-left: 100px;
+}
+@media (max-width: 991px) {
+  .frado-p-wrap.wrap2 {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .frado-p-wrap.wrap2 {
+    padding-right: 0;
+  }
+}
+.frado-p-content {
+  padding-top: 50px;
+}
+@media (max-width: 1399px) {
   .frado-p-content {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 991px) {
   .frado-p-content {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 .frado-p-content h4 {
@@ -3684,6 +3724,14 @@ header.hide-header {
 @media (max-width: 991px) {
   .frado-p-btn {
     margin-top: 30px;
+  }
+}
+.frado-p-thumb {
+  margin-right: -1px;
+}
+@media (max-width: 1199px) {
+  .frado-p-thumb {
+    padding-top: 80px;
   }
 }
 @media (max-width: 991px) {
@@ -3705,6 +3753,14 @@ header.hide-header {
     border-radius: 20px 20px 0 0;
   }
 }
+.frado-p-thumb.thumb2 img {
+  border-radius: 0 20px 0 0px;
+}
+@media (max-width: 991px) {
+  .frado-p-thumb.thumb2 img {
+    border-radius: 20px;
+  }
+}
 @media (max-width: 991px) {
   .frado-p-thumb.thumb2 {
     padding-top: 0 !important;
@@ -3720,6 +3776,7 @@ header.hide-header {
 .frado-p-wrap2 {
   border-radius: 20px;
   margin-bottom: 24px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.0509803922);
   background-color: var(--light-color);
 }
 .frado-p-wrap2:hover .frado-p-thumb2 img {
@@ -3909,9 +3966,6 @@ header.hide-header {
   background-color: var(--light-color);
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.0509803922);
 }
-.frado-faq-item.item2.open {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-}
 @media (max-width: 767px) {
   .frado-faq-item.item2 {
     padding: 30px 24px;
@@ -3930,7 +3984,7 @@ header.hide-header {
 }
 .frado-faq-body {
   display: none;
-  padding-right: 70px;
+  padding-right: 50px;
   padding-top: 10px;
 }
 @media (max-width: 991px) {
@@ -4267,29 +4321,15 @@ tr {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 0;
   background: linear-gradient(180deg, rgba(24, 29, 20, 0) 47.5%, #181D14 100%);
   z-index: 1;
-  transition: all 0.4s;
-}
-.frado-team-thumb::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(180deg, rgba(24, 29, 20, 0) 47.5%, #181D14 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  z-index: 1;
-  opacity: 0;
   transition: all 0.4s;
 }
 .frado-team-thumb:hover img {
   transform: scale(1.1);
 }
 .frado-team-thumb:hover::before {
-  opacity: 1;
-}
-.frado-team-thumb:hover::after {
   opacity: 1;
 }
 .frado-team-thumb:hover .frado-team-content {
@@ -4763,7 +4803,7 @@ blockquote::before {
 .frado-service-table-item {
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 30px 0;
   transition: all 0.4s;
   border-bottom: 1px solid rgba(4, 218, 0, 0.1019607843);
   position: relative;
@@ -4811,12 +4851,27 @@ blockquote::before {
     display: block;
   }
 }
+.frado-service-table-item.item2 {
+  border-bottom: 1px solid rgba(24, 29, 20, 0.1019607843);
+}
+.frado-service-table-item.item2:last-child {
+  border-bottom: none;
+}
+.frado-service-table-item.item2:hover .frado-service-table-title h3 {
+  color: var(--light-color);
+}
+.frado-service-table-item.item2:hover .frado-service-table-body p {
+  color: var(--light-color);
+}
 .frado-service-table-title {
   flex: 0 0 36%;
 }
+.frado-service-table-title h3 {
+  transition: all 0.4s;
+}
 .frado-service-table-body {
   flex: 0 0 44%;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 110px;
 }
 @media (max-width: 1399px) {
   .frado-service-table-body {
@@ -4830,8 +4885,11 @@ blockquote::before {
 }
 @media (max-width: 991px) {
   .frado-service-table-body {
-    padding: 15px 0;
+    padding: 24px 0;
   }
+}
+.frado-service-table-body p {
+  transition: all 0.4s;
 }
 .frado-service-table-btn {
   flex: 0 0 20%;
@@ -5137,6 +5195,9 @@ blockquote::before {
 .frado-about-content span {
   color: rgba(24, 29, 20, 0.5);
 }
+.frado-about-content.content2 {
+  text-align: center;
+}
 .frado-about-title {
   position: relative;
 }
@@ -5256,7 +5317,7 @@ textarea {
 }
 .frado-main-field input {
   border-radius: 50px;
-  border: 1px solid rgba(243, 238, 227, 0.5);
+  border: 2px solid rgba(243, 238, 227, 0.1019607843);
   font-size: 20px;
   line-height: 30px;
 }
@@ -5265,7 +5326,7 @@ textarea {
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 30px;
-  border: 1px solid rgba(243, 238, 227, 0.5);
+  border: 2px solid rgba(243, 238, 227, 0.1019607843);
 }
 
 .input-form input {

@@ -272,60 +272,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       }]
     });
   }
-
-  /*--------------------------------------------------------------
-  FRADO  PORTFOLIO SLIDER JS INIT
-  --------------------------------------------------------------*/
-
-  var p_slider_data = $('.frado-p-slider-init');
-  if (p_slider_data.is_exist()) {
-    p_slider_data.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 0,
-      speed: 5000,
-      arrows: false,
-      pauseOnHover: false,
-      cssEase: 'linear',
-      responsive: [{
-        breakpoint: 1399,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1
-        }
-      }]
-    });
-  }
-  var testimonial_slider_data = $('.frado-p-slider-init2');
-  if (testimonial_slider_data.is_exist()) {
-    testimonial_slider_data.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 5000,
-      autoplaySpeed: 0,
-      arrows: false,
-      rtl: true,
-      pauseOnHover: false,
-      cssEase: 'linear',
-      responsive: [{
-        breakpoint: 1399,
-        settings: {
-          slidesToShow: 2
-        }
-      }, {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1
-        }
-      }]
-    });
-  }
   $(function () {}); /*End document ready*/
 
   $(window).on("resize", function () {}); // end window resize
@@ -426,16 +372,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
     // Uncomment this to disaplay monthly on page load
     toggle(false);
-    function toggle(checked) {
-      $(".toggle-button").prop('checked', checked);
-      if (checked) {
-        $('.coreMonthlyPrice, .proMonthlyPrice').show();
-        $('.coreAnnuallyText, .coreAnnuallyPrice, .proAnnuallyPrice').hide();
-      } else {
-        $('.coreMonthlyPrice,.proMonthlyPrice').hide();
-        $('.coreAnnuallyText,.coreAnnuallyPrice, .proAnnuallyPrice').show();
-      }
-    }
   });
 
   /*===========================================
