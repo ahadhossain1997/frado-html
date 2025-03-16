@@ -2581,65 +2581,12 @@ header.hide-header {
     display: none;
   }
 }
-.frado-hero-shape3 {
-  position: absolute;
-  top: 170px;
-  right: 100px;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-hero-shape3 {
-    top: 150px;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-hero-shape3 {
-    top: 130px;
-    right: 70px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-hero-shape3 {
-    top: 200px;
-    right: 140px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-hero-shape3 {
-    display: none;
-  }
-}
 
-.frado-about-line {
+.frado-inner-shape {
   position: absolute;
-  top: 170px;
-  right: 265px;
+  top: 0;
+  left: 0;
   z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-about-line {
-    top: 140px;
-    right: 230px;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-about-line {
-    top: 122px;
-    right: 165px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-about-line {
-    top: 195px;
-  }
-  .frado-about-line img {
-    width: 85%;
-  }
-}
-@media (max-width: 767px) {
-  .frado-about-line {
-    display: none;
-  }
 }
 
 .frado-craeer-shape {
@@ -2656,121 +2603,11 @@ header.hide-header {
   z-index: -1;
 }
 
-.frado-p-line {
-  position: absolute;
-  top: 70px;
-  left: 250px;
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .frado-p-line {
-    top: 50px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-p-line {
-    left: 110px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-p-line {
-    display: none;
-  }
-}
-.frado-p-line2 {
-  top: 70px;
-  left: 380px;
-  position: absolute;
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .frado-p-line2 {
-    top: 50px;
-    left: 250px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-p-line2 {
-    left: 110px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-p-line2 {
-    display: none;
-  }
-}
-.frado-p-shapee {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.frado-faq-line {
-  position: absolute;
-  top: 170px;
-  left: 15px;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-faq-line {
-    top: 148px;
-    left: 80px;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-faq-line {
-    top: 122px;
-    left: 122px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-faq-line {
-    top: 130px;
-    left: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-faq-line {
-    display: none;
-  }
-}
 .frado-faq-shape {
   position: absolute;
   bottom: 300px;
   left: 0;
   z-index: -1;
-}
-
-.frado-content-line {
-  position: absolute;
-  top: 165px;
-  right: 25px;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-content-line {
-    position: absolute;
-    top: 140px;
-    right: 65px;
-    z-index: -1;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-content-line {
-    top: 130px;
-    right: 210px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-content-line {
-    right: 25px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-content-line {
-    display: none;
-  }
 }
 
 .frado-contact-shape {
@@ -2780,51 +2617,6 @@ header.hide-header {
   z-index: -1;
 }
 
-.frado-pricing-line {
-  position: absolute;
-  top: 70px;
-  left: 20px;
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .frado-pricing-line {
-    top: 50px;
-    left: 75px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-pricing-line {
-    left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-pricing-line {
-    display: none;
-  }
-}
-
-.frado-blog-line {
-  position: absolute;
-  top: 60px;
-  right: 55px;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-blog-line {
-    right: 85px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-blog-line {
-    top: 50px;
-    right: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-blog-line {
-    display: none;
-  }
-}
 .frado-blog-shape {
   bottom: 0;
   left: 0;
@@ -2837,28 +2629,6 @@ header.hide-header {
   z-index: -1;
   position: absolute;
 }
-.frado-blog-line2 {
-  position: absolute;
-  bottom: 80px;
-  right: 150px;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-blog-line2 {
-    right: 215px;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-blog-line2 {
-    right: 185px;
-    bottom: 110px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-blog-line2 {
-    display: none;
-  }
-}
 .frado-blog-shape3 {
   position: absolute;
   bottom: 0;
@@ -2868,91 +2638,14 @@ header.hide-header {
   border-radius: 0 0 0 20px;
 }
 
-.frado-service-d-line {
+.frado-breadcrumbs-shape {
   position: absolute;
-  top: 60px;
-  left: 200px;
-  z-index: -1;
-}
-@media (max-width: 991px) {
-  .frado-service-d-line {
-    left: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-service-d-line {
-    display: none;
-  }
-}
-
-.frado-team-line {
-  position: absolute;
-  top: 70px;
-  left: 276px;
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .frado-team-line {
-    top: 50px;
-    left: 190px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-team-line {
-    left: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-team-line {
-    display: none;
-  }
-}
-
-.frado-career-line {
-  position: absolute;
-  bottom: 85px;
-  right: 110px;
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .frado-career-line {
-    top: 120px;
-    right: 190px;
-  }
-}
-@media (max-width: 991px) {
-  .frado-career-line {
-    right: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-career-line {
-    display: none;
-  }
-}
-.frado-career-line2 {
-  position: absolute;
-  top: 70px;
+  top: 0;
   right: 0;
-  z-index: -1;
-}
-@media (max-width: 1399px) {
-  .frado-career-line2 {
-    right: 90px;
-  }
-}
-@media (max-width: 1199px) {
-  .frado-career-line2 {
-    top: 60px;
-  }
+  z-index: 11;
 }
 @media (max-width: 991px) {
-  .frado-career-line2 {
-    right: 120px;
-  }
-}
-@media (max-width: 767px) {
-  .frado-career-line2 {
+  .frado-breadcrumbs-shape {
     display: none;
   }
 }
@@ -3398,6 +3091,15 @@ header.hide-header {
 .frado-contact-box p {
   color: var(--light-color);
   margin-bottom: 40px;
+}
+.frado-contact-box.box2 {
+  margin-left: 0;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .frado-contact-box.box2 {
+    margin-top: 30px;
+  }
 }
 .frado-contact-map {
   width: 100%;
@@ -3865,14 +3567,6 @@ header.hide-header {
 .frado-p-d-wrap {
   max-width: 1080px;
   margin: 0 auto;
-}
-.frado-p-d-thumb {
-  padding-top: 80px;
-}
-@media (max-width: 757px) {
-  .frado-p-d-thumb {
-    padding-top: 60px;
-  }
 }
 .frado-p-d-content h3 {
   padding-bottom: 15px;
@@ -4814,9 +4508,8 @@ tr {
   color: var(--accent-color);
 }
 .frado-blog-d-comment-wrap1.wrap2 {
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(20, 45, 111, 0.1019607843);
-  margin-bottom: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(24, 29, 20, 0.1019607843);
 }
 .frado-blog-d-comment-thumb {
   margin-right: 20px;
@@ -4833,7 +4526,32 @@ tr {
   line-height: 22px;
 }
 .frado-blog-d-comment-data1 p {
-  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.frado-blog-d-comment-wrap {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(24, 29, 20, 0.1019607843);
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(24, 29, 20, 0.1019607843);
+  margin-top: 20px;
+}
+.frado-blog-d-comment-wrap .reply-btn a {
+  padding-top: 10px;
+  transition: all 0.4s;
+  color: var(--heading-color);
+}
+.frado-blog-d-comment-wrap .reply-btn a:hover {
+  color: var(--accent-color);
+}
+.frado-blog-d-comment-data span {
+  font-size: 16px;
+  line-height: 22px;
+}
+.frado-blog-d-comment-data p {
+  color: var(--dark-color1);
+  padding-top: 10px;
 }
 
 blockquote {
@@ -5430,12 +5148,12 @@ input, textarea {
 }
 
 textarea {
-  height: 250px;
+  height: 180px;
   resize: none;
 }
 @media (max-width: 767px) {
   textarea {
-    height: 150px;
+    height: 130px;
   }
 }
 
@@ -5447,12 +5165,14 @@ textarea {
   border: 2px solid rgba(243, 238, 227, 0.1019607843);
   font-size: 20px;
   line-height: 30px;
+  background-color: rgba(243, 238, 227, 0.0509803922);
 }
 .frado-main-field-textarea {
   border-radius: 20px;
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 30px;
+  background-color: rgba(243, 238, 227, 0.0509803922);
   border: 2px solid rgba(243, 238, 227, 0.1019607843);
 }
 
@@ -6157,8 +5877,6 @@ button#frado-search-btn {
   }
 }
 .breadcrumb-content {
-  position: relative;
-  max-width: 930px;
   text-align: center;
   margin: 0 auto;
 }
