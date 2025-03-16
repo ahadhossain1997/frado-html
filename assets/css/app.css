@@ -2570,17 +2570,6 @@ header.hide-header {
   right: 0;
   z-index: -1;
 }
-.frado-hero-shape2 {
-  position: absolute;
-  top: 54%;
-  z-index: -1;
-  left: 0;
-}
-@media (max-width: 1399px) {
-  .frado-hero-shape2 {
-    display: none;
-  }
-}
 
 .frado-inner-shape {
   position: absolute;
